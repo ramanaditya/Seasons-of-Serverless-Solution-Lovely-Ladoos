@@ -3,7 +3,7 @@ const streamifier = require("streamifier");
 
 const containerName = process.env.CONTAINER_NAME;
 
-async function uploadBlob(fileData, fileName) {
+async function uploadBlob(fileName, fileData) {
     const blobServiceClient = BlobServiceClient.fromConnectionString(process.env.AzureWebJobsStorage);
     const containerClient = blobServiceClient.getContainerClient(containerName);;
     const blockBlobClient = containerClient.getBlockBlobClient(fileName);

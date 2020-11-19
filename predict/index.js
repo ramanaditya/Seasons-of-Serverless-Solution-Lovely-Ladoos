@@ -1,6 +1,5 @@
 const { ClassifyImageUrl } = require("./customvisionPrdiction");
 module.exports = async function (context, req) {
-
     const imageUrl = (req.query.imageurl || (req.body && req.body.imageurl));
 
     let results;
@@ -10,7 +9,7 @@ module.exports = async function (context, req) {
     if (!results.length) {
         context.res = {
             status: 404,
-            body: { statusCode: 404, message: "Unable to Predict the Image, try again with different Image URL" }
+            body: { message: `Unable to Predict the Image, try again with different Image URL. Did you use the url of the image in imageurl parameter ?` }
         };
     } else {
         context.res = {
