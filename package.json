@@ -1,7 +1,7 @@
 {
-  "name": "seasons-of-serverless",
+  "name": "seasons-of-serverless-solution-lovely-ladoos",
   "version": "1.0.0",
-  "description": "Serverless Solution of Evaluating your ladoos, using Custom Vision API and Azure Functions",
+  "description": "Serverless Solution of Predicting Accuracy of your ladoos, using Custom Vision API and Azure Functions",
   "main": "index.js",
   "scripts": {
     "start": "func start",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ramanaditya/Seasons-of-Serverless.git"
+    "url": "git+https://github.com/ramanaditya/Seasons-of-Serverless-Solution-Lovely-Ladoos.git"
   },
   "author": "Aditya Raman",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ramanaditya/Seasons-of-Serverless/issues"
+    "url": "https://github.com/ramanaditya/Seasons-of-Serverless-Solution-Lovely-Ladoos/issues"
   },
-  "homepage": "https://github.com/ramanaditya/Seasons-of-Serverless#readme",
+  "homepage": "https://github.com/ramanaditya/Seasons-of-Serverless-Solution-Lovely-Ladoos#readme",
   "dependencies": {
     "@azure/cognitiveservices-customvision-prediction": "^5.1.2",
     "@azure/ms-rest-js": "^2.1.0",

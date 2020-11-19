@@ -25,11 +25,11 @@ func start
 ```
 
 ## Checking and Working of API endpoint
-- We will use [Postman](https://www.postman.com/) for our API Testing
+- Test API using [Postman](https://www.postman.com/)
 
 
 ## Endpoints
 **Base URL: http://localhost:7071**
 
 - /api/predict?imageurl=<Image URL>
-- /api/uploadImage
+- /api/blobs
