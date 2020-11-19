@@ -1,7 +1,7 @@
 const { ClassifyImageUrl } = require("./customvisionPrdiction");
 module.exports = async function (context, req) {
 
-    const imageUrl = (req.query.url || (req.body && req.body.url));
+    const imageUrl = (req.query.imageurl || (req.body && req.body.imageurl));
 
     let results;
 

@@ -19,6 +19,9 @@
   "dependencies": {
     "@azure/cognitiveservices-customvision-prediction": "^5.1.2",
     "@azure/ms-rest-js": "^2.1.0",
-    "@azure/storage-blob": "^12.3.0"
+    "@azure/storage-blob": "^12.3.0",
+    "into-stream": "^6.0.0",
+    "parse-multipart": "^1.0.4",
+    "streamifier": "^0.1.1"
   }
 }
