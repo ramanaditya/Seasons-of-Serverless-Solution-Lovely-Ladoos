@@ -37,7 +37,7 @@ func start
 ### Requests
 
 | endpoint      | method    | parameters        | required |
-| :---:         | :---:     | :---:             | :---:    |
+| :---          | :---:     | :---:             | :---:    |
 | /api/predict  | `GET`     | imageurl=<ImageURL>   | True |
 | /api/blobs    | `GET`     |                       |      |
 |               | `POST`    |                       |      |
