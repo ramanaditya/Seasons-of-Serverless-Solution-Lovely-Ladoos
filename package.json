@@ -1,0 +1,19 @@
+{
+  "name": "seasons-of-serverless",
+  "version": "1.0.0",
+  "description": "Serverless Solution of Evaluating your ladoos, using Custom Vision API and Azure Functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramanaditya/Seasons-of-Serverless.git"
+  },
+  "author": "Aditya Raman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramanaditya/Seasons-of-Serverless/issues"
+  },
+  "homepage": "https://github.com/ramanaditya/Seasons-of-Serverless#readme"
+}
