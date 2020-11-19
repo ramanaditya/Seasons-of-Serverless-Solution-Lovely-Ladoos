@@ -7,7 +7,7 @@ module.exports = async function (context, req) {
 
     if (req.method == "GET") {
         context.res = {
-            // status: 200, /* Defaults to 200 */
+            status: 200, /* Defaults to 200 */
             body: await getAllBlobs()
         };
     } else if (req.method == "POST") {
@@ -17,7 +17,7 @@ module.exports = async function (context, req) {
         const filedata = parts[0].data;
         const filename = parts[0].filename;
         context.res = {
-            // status: 200, /* Defaults to 200 */
+            status: 200, /* Defaults to 200 */
             body: await uploadBlob(filedata, filename)
         };
     }

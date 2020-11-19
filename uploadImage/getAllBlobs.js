@@ -9,21 +9,17 @@ const sharedKeyCredential = new StorageSharedKeyCredential(
     process.env.AZURE_STORAGE_ACCOUNT_ACCESS_KEY);
 const pipeline = newPipeline(sharedKeyCredential);
 
-const blobServiceClient = new BlobServiceClient(
-    `https://${process.env.AZURE_STORAGE_ACCOUNT_NAME}.blob.core.windows.net`,
-    pipeline
-);
 const containerName = process.env.CONTAINER_NAME;
 
 async function getAllBlobs() {
     let results = [];
     try {
+        const blobServiceClient = new BlobServiceClient(
+            `https://${process.env.AZURE_STORAGE_ACCOUNT_NAME}.blob.core.windows.net`,
+            pipeline
+        );
         const containerClient = blobServiceClient.getContainerClient(containerName);
         const listBlobsResponse = await containerClient.listBlobFlatSegment();
-
-        for await (const blob of listBlobsResponse.segment.blobItems) {
-            console.log(`Blob: ${blob.name}`);
-        }
 
         if (listBlobsResponse.segment.blobItems.length) {
             results = listBlobsResponse.segment.blobItems;
@@ -33,7 +29,6 @@ async function getAllBlobs() {
         }
         return results;
     } catch (err) {
-        console.log(err)
         return err;
     }
 }
