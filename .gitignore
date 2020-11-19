@@ -23,6 +23,7 @@ appsettings.json
 local.settings.json
 
 node_modules
+.account-info/
 dist
 
 # Local python packages
