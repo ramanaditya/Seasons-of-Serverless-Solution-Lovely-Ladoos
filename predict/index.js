@@ -1,13 +1,21 @@
+const { ClassifyImageUrl } = require("./customvisionPrdiction");
 module.exports = async function (context, req) {
-    context.log('JavaScript HTTP trigger function processed a request.');
 
-    const name = (req.query.name || (req.body && req.body.name));
-    const responseMessage = name
-        ? "Hello, " + name + ". This HTTP triggered function executed successfully."
-        : "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.";
+    const imageUrl = (req.query.url || (req.body && req.body.url));
 
-    context.res = {
-        // status: 200, /* Defaults to 200 */
-        body: responseMessage
-    };
+    let results;
+
+    results = await ClassifyImageUrl(imageUrl);
+
+    if (!results.length) {
+        context.res = {
+            status: 404,
+            body: { statusCode: 404, message: "Unable to Predict the Image, try again with different Image URL" }
+        };
+    } else {
+        context.res = {
+            status: 200, /* Defaults to 200 */
+            body: results
+        };
+    }
 }

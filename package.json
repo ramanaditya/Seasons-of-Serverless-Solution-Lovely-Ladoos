@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ramanaditya/Seasons-of-Serverless/issues"
   },
-  "homepage": "https://github.com/ramanaditya/Seasons-of-Serverless#readme"
+  "homepage": "https://github.com/ramanaditya/Seasons-of-Serverless#readme",
+  "dependencies": {
+    "@azure/cognitiveservices-customvision-prediction": "^5.1.2",
+    "@azure/ms-rest-js": "^2.1.0"
+  }
 }
