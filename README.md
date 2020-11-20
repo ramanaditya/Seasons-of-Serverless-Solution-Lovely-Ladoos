@@ -1,8 +1,13 @@
 # Seasons of Serverless: Solution, Lovely Ladoos
 ![Seasons of Serverless](https://raw.githubusercontent.com/microsoft/Seasons-of-Serverless/main/graphics/seasons-of-serverless-banner-animated.gif)
 
+## About
+Each year at this time, we prepare something special to help you learn Serverless once and for all with a series of challenges. This year, we decided to feature seven unique challenges, one per week. Come join us!
+- [Check Original Repo](https://github.com/microsoft/Seasons-of-Serverless)
+
+## Solution
 The solution creates a Serverless Endpoint which is used to
-- List all the images on the Azure Blob Storage
+- List all the images stored on the Azure Blob Storage
 - Upload new image on the Azure Blob Storage
 - Predict the already uploaded image using Custom Vision API
 
@@ -140,6 +145,7 @@ func start
 - [Azure Command-Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/)
 - [Azure Functions Extension](https://docs.microsoft.com/en-us/azure/azure-functions/)
 - [Custom Vision](https://docs.microsoft.com/en-in/azure/cognitive-services/custom-vision-service/)
+- [Azure Blob Storage](https://docs.microsoft.com/en-in/azure/storage/blobs/)
 
 ## Contributors
 - [Aditya Raman](https://twitter.com/_adityaraman)
