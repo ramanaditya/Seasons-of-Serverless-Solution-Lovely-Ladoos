@@ -1,6 +1,18 @@
 # Seasons of Serverless: Solution, Lovely Ladoos
 ![Seasons of Serverless](https://raw.githubusercontent.com/microsoft/Seasons-of-Serverless/main/graphics/seasons-of-serverless-banner-animated.gif)
 
+The solution creates a Serverless Endpoint which is used to
+- List all the images on the Azure Blob Storage
+- Upload new image on the Azure Blob Storage
+- Predict the already uploaded image using Custom Vision API
+
+## Pre-requisites
+- Create Resource Group
+- Create Azure Blob Storage
+- Create a Container
+- Deploy the Custom Vision API, you can use this [datasets](./datasets)
+- Publish your prediction
+
 ## Running the Serverless Functions
 #### Clone the Project
 ```bash
