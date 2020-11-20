@@ -2,6 +2,7 @@ const { getAllBlobs } = require("./getAllBlobs");
 const { uploadBlob } = require("./uploadBlob");
 const multipart = require("parse-multipart");
 
+// Get the details of the file from the raw data
 function getFileData(req) {
     const bodyBuffer = Buffer.from(req.body);
     const boundary = multipart.getBoundary(req.headers['content-type']);

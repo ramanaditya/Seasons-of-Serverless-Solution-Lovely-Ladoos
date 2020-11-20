@@ -1,9 +1,14 @@
 const { ClassifyImageUrl } = require("./customvisionPrdiction");
+
+
 module.exports = async function (context, req) {
+    // get url of the image as the query parameter
     const imageUrl = (req.query.imageurl || (req.body && req.body.imageurl));
 
+    // To store the response
     let results;
 
+    // Call the predict function for finding the accuracy
     results = await ClassifyImageUrl(imageUrl);
 
     if (!results.length) {

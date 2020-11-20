@@ -1,17 +1,5 @@
 # Seasons of Serverless: Solution, Lovely Ladoos
-![Seasons of Serverless](https://raw.githubusercontent.com/ramanaditya/Seasons-of-Serverless/main/graphics/banner-1.png)
-
-## Functions in predictlovelyladoos:
-- blobs - [httpTrigger]
-    - Invoke url: https://predictlovelyladoos.azurewebsites.net/api/blobs?code=G9gLnPGF913R0H5LrbFT7GiQQvtjApERYJCMVD5xCTP8sVnZu2HdIg==
-
-- predict - [httpTrigger]
-    - Invoke url: https://predictlovelyladoos.azurewebsites.net/api/predict?code=jkt0i2N5clbXD/y9BKiv/MY9ZFvfi2xGBcmENCOqp/94W1DaeACVwg==
-
-## Deploy from CLI
-```bash
-func azure functionapp publish predictlovelyladoos
-```
+![Seasons of Serverless](https://raw.githubusercontent.com/microsoft/Seasons-of-Serverless/main/graphics/seasons-of-serverless-banner-animated.gif)
 
 ## Running the Serverless Functions
 #### Clone the Project
@@ -50,7 +38,7 @@ func start
 
 | endpoint      | method    | parameters        | required |
 | :---          | :---:     | :---:             | :---:    |
-| /api/predict  | `GET`     | imageurl=<ImageURL>   | True |
+| /api/predict  | `GET`     | imageurl=\<ImageURL\> | True |
 | /api/blobs    | `GET`     |                       |      |
 |               | `POST`    |                       |      |
 

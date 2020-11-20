@@ -19,6 +19,7 @@ async function getAllBlobs() {
             pipeline
         );
         const containerClient = blobServiceClient.getContainerClient(containerName);
+
         const listBlobsResponse = await containerClient.listBlobFlatSegment();
 
         if (listBlobsResponse.segment.blobItems.length) {
