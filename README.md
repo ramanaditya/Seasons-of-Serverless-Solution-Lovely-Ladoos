@@ -27,7 +27,6 @@ func start
 ## Checking and Working of API endpoint
 - Test API using [Postman](https://www.postman.com/)
 
-
 ## Endpoints
 **Base URL: http://localhost:7071**
 
@@ -122,3 +121,14 @@ func start
   }
 ]
 ```
+
+## Resources
+- [Visual Studio Code](https://code.visualstudio.com)
+- [Azure Account](https://azure.microsoft.com)
+- [Azure Command-Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/)
+- [Azure Functions Extension](https://docs.microsoft.com/en-us/azure/azure-functions/)
+- [Custom Vision](https://docs.microsoft.com/en-in/azure/cognitive-services/custom-vision-service/)
+
+## Contributors
+- [Aditya Raman](https://twitter.com/_adityaraman)
+- [Rama Soumya Naraparaju](https://www.linkedin.com/in/soumyanarapa-3a8740169/)
