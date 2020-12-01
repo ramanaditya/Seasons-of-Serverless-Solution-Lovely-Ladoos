@@ -1,6 +1,10 @@
 # Seasons of Serverless: Solution, Lovely Ladoos
 ![Seasons of Serverless](https://raw.githubusercontent.com/microsoft/Seasons-of-Serverless/main/graphics/seasons-of-serverless-banner-animated.gif)
 
+## Blogs
+- [Medium](https://ramanaditya.medium.com/seasons-of-serverless-lovely-ladoos-8769724ef618)
+- [dev.to](https://dev.to/ramanaditya/seasons-of-serverless-lovely-ladoos-3db6)
+
 ## About
 Each year at this time, we prepare something special to help you learn Serverless once and for all with a series of challenges. This year, we decided to feature seven unique challenges, one per week. Come join us!
 - [Check Original Repo](https://github.com/microsoft/Seasons-of-Serverless)
@@ -41,13 +45,13 @@ export $(grep -v '^#' .env | xargs)
 func start
 ```
 
-## Checking and Working of API endpoint
+## Checking the Working of API endpoint
 - Test API using [Postman](https://www.postman.com/)
 
 ## Endpoints
 **Base URL: http://localhost:7071**
 
-- /api/predict?imageurl=<Image URL>
+- /api/predict?imageurl=\<Image URL\>
 - /api/blobs
 
 ### Requests
